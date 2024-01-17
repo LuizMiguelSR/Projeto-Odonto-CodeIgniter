@@ -9,19 +9,19 @@
                 </div>
     
                 <div class="col-6 d-flex align-items-center p-5">
-                    <form action="#" class="form w-100">
+                    <form action="<?= base_url('/login') ?>" method="post" class="form w-100">
                         <h2 class="h4 text-light mb-4">Painel Administrativo</h2>
     
                         <div class="row row-gap-3">
                             <div class="col-12 form-group text-light">
                                 <label for="email">E-mail:</label>
-                                <input type="email" class="form-control bg-dark border-dark text-light" id="email" placeholder="example@kbrtec.com.br">
+                                <input type="email" class="form-control bg-dark border-dark text-light" name="email" id="email" placeholder="example@kbrtec.com.br">
                                 <!-- <small class="bg-danger rounded py-1 px-2 mt-1 d-block text-light">Erro</small> -->
                             </div>
     
                             <div class="col-12 form-group text-light">
                                 <label for="password">Senha:</label>
-                                <input type="password" class="form-control bg-dark border-dark text-light" id="password">
+                                <input type="password" class="form-control bg-dark border-dark text-light" name="password" id="password">
                                 <!-- <small class="bg-danger rounded py-1 px-2 mt-1 d-block text-light">Erro</small> -->
     
                                 <a href="<?= base_url('/recuperar') ?>" class="link-light"><small>Esqueci minha senha</small></a>

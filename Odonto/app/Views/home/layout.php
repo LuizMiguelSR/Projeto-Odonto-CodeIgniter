@@ -13,5 +13,6 @@
     <body class="bg-dark">
         <?= $this->renderSection('content') ?>
         <?= $this->include('home\includes\footer') ?>
+        <?= $this->include('home\partials\notifica') ?>
     </body>
 </html>
